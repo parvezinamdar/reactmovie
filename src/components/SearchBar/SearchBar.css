@@ -1,0 +1,47 @@
+.SearchBar {
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff; 
+  cursor: pointer;
+}
+.SearchBarInput {
+  width: 210px;
+  font-size: 12px;
+  margin-left: 20px;
+  padding: 5px 10px 5px 15px;
+  border: 0;
+  background: transparent;
+  border: 0.5px solid #777782;
+  color: #777782;
+  border-radius: 20px;
+  outline: 0;
+}
+.SearchBarInput::placeholder{
+  width: 100px;
+}
+.icon__search{
+  position: absolute;
+  right: 20px;
+  top: 16.5px;
+  font-size: 15px;
+}
+@media (max-width: 499px) {
+  .SearchBar{
+    display: none;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .rmdbSearchBarInput {
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 3px;
+  }
+}
+@media (max-width: 885px) {
+  .SearchBar{
+    display: none;
+  }
+}

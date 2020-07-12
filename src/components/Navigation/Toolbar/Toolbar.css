@@ -1,0 +1,29 @@
+.Toolbar {
+    height: 70px;
+    width: 100%;
+    position: relative;
+    background-color: #0f1128;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+@media (max-width: 1200px){
+    .Toolbar {
+        padding: 0 40px;
+    }
+   
+}
+
+
+@media (max-width: 640px) {
+    .DesktopOnly {
+        display: none;
+    }
+    .Toolbar{
+        width: 100%;
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,51 @@
+.rmdbMovieThumb{
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2%;
+}
+
+.image-container{
+  overflow: hidden;
+}
+.rmdbMovieThumb img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  width:100%;
+  height: 100%;
+}
+
+.rmdbMovieThumb:hover img{
+  transform: scale(1.05);
+}
+.no_hover img:hover{
+  transform: scale(1) !important;
+}
+
+.movieThumbTitle{
+  position: absolute;
+  bottom: 2.5%;
+  color: #fff; 
+  font-size: 14px;
+  padding: 0 14px;
+}
+.movieThumbTitle:hover{
+  color:#919191;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 995px) {
+
+  .movieThumbTitle{
+    color: #fff; 
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px){
+
+  .movieThumbTitle{
+    color: #fff; 
+    font-size: 13px !important;
+  }
+}

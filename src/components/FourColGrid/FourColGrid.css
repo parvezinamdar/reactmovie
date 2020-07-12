@@ -1,0 +1,78 @@
+.colgrid__container{
+  width: 100%;
+  padding: 12px;
+}
+
+.rmdbGrid h1 {
+  font-size: 32px;
+  margin-top:30px !important;
+  margin-bottom: 20px !important;
+  font-weight:600;
+  color:#fff;
+}
+
+.rmdbGridContent {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.rmdbGridElement {
+  margin: 0 20px 20px 0;
+  height: 100%;
+  max-width: 300px;
+  animation: animateGrid 0.5s;
+  overflow: hidden;
+}
+
+@keyframes animateGrid {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+/* For a 4-column grid */
+.rmdbGridElement:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) { 
+  .rmdbGridContent {
+    grid-template-columns: auto auto;
+  }
+
+  .rmdbGridElement:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .rmdbGrid h1 {
+    font-size:22px;
+  }
+}
+@media screen and (max-width: 995px) {
+  .rmdbGridContent{
+    grid-template-columns: auto auto auto auto;
+  }
+  .rmdbGridElement {
+    margin: 0 10px 40px 5px !important;
+
+    max-width: 350px !important;
+  }
+  .rmdbGrid{
+    padding: 0px;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+
+  .rmdbGridContent{
+    grid-template-columns: auto auto;
+  }
+  .rmdbGridElement {
+    margin: 0 10px 20px 10px !important;  
+  }
+
+}

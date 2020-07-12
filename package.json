@@ -1,0 +1,33 @@
+{
+  "name": "movie-web",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://parvezinamdar.github.io/movie/",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "react": "^16.11.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "1.1.5",
+    "react-slick": "^0.26.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^4.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

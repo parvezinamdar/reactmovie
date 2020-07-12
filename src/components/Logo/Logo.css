@@ -1,0 +1,29 @@
+.Logo{
+    box-sizing: border-box;
+}
+.Logo h1{
+    font-size: 28px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 50px;
+    color: #ee2d2f;
+}
+@media (max-width: 1060px){
+    .Logo h1{
+        font-size: 20px;
+        margin-right: 30px;   
+    }
+}
+@media (max-width: 640px) {
+    .Logo{
+        width: 76%;
+        text-align: center;
+    }
+    .Logo h1{
+        font-size: 24px;
+        margin-right: 0px;
+        margin-left: 10px;
+        margin-top: 14px;
+    }
+}

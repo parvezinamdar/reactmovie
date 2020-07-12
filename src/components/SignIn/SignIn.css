@@ -1,0 +1,23 @@
+
+.SignIn button{
+    border: none;
+    outline: none;
+    padding: 3px 14px;
+    border-radius: 15px;
+    color: #777782;
+    background: transparent;
+    border: 0.5px solid #777782;
+    margin-left: 10px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+
+}
+.SignIn button:hover{
+    background: #fff;
+    color: #1f1f1f;
+}
+@media (max-width: 1060px){
+    .SignIn {
+        display: none;
+    }
+}
